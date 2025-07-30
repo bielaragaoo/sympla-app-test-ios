@@ -19,21 +19,21 @@ struct SortDTO: Codable {
 }
 
 struct EventDTO: Codable {
-    let id: String
-    let referenceId: Int
-    let startDate: String
-    let endDate: String
-    let name: String
-    let detail: String
-    let privateEvent: Int
-    let published: Int
-    let cancelled: Int
-    let image: String
-    let url: String
+    let id: String?
+    let referenceId: Int?
+    let startDate: String?
+    let endDate: String?
+    let name: String?
+    let detail: String?
+    let privateEvent: Int?
+    let published: Int?
+    let cancelled: Int?
+    let image: String?
+    let url: String?
     let address: AddressDTO?
-    let host: HostDTO
-    let categoryPrim: CategoryDTO
-    let categorySec: CategoryDTO
+    let host: HostDTO?
+    let categoryPrim: CategoryDTO?
+    let categorySec: CategoryDTO?
 }
 
 struct AddressDTO: Codable {
